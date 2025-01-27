@@ -20,12 +20,12 @@ export default function Achievements() {
       year: "2024",
       description: "Achieved a 3-star rating on CodeChef with a rating of 1600+.",
     },
-    {
-      title: "Best Project Award",
-      year: "2023",
-      description:
-        "Developed a Social Media Platform using React and Redux, recognized for innovation and design.",
-    },
+    // {
+    //   title: "Best Project Award",
+    //   year: "2023",
+    //   description:
+    //     "Developed a Social Media Platform using React and Redux, recognized for innovation and design.",
+    // },
   ];
 
   useEffect(() => {

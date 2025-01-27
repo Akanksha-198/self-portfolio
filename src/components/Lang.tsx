@@ -1,6 +1,6 @@
 import React from "react";
-import { FaReact, FaHtml5, FaCss3Alt, FaPython } from "react-icons/fa";
-import { SiJavascript, SiBootstrap, SiCplusplus, SiC } from "react-icons/si";
+import {  FaHtml5, FaCss3Alt, FaPython } from "react-icons/fa";
+import { SiJavascript,  SiCplusplus, SiC } from "react-icons/si";
 
 const languages = [
   { name: "C", icon: <SiC className="text-blue-600 text-6xl" /> },

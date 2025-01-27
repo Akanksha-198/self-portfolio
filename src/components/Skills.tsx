@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaCode, FaLaptopCode, FaServer, FaTools } from "react-icons/fa";
-import { SiTailwindcss, SiBootstrap, SiExpress, SiMongodb, SiFigma, SiMysql } from "react-icons/si";
+import { SiTailwindcss, SiBootstrap, SiExpress,  SiFigma } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
 export default function Skills() {

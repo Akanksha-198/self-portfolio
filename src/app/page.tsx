@@ -3,7 +3,7 @@ import Achievements from "@/components/Achivement";
 
 import Education from "@/components/Education";
 import Hero1 from "@/components/Hero1";
-import Hero2 from "@/components/Hero2";
+import  HeroComponent from "@/components/Hero2";
 import LanguagesSection from "@/components/Lang";
 import Portfolio from "@/components/Project";
 import Resume from "@/components/Resume";
@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Hero1 />
       <AboutMe />
-      <Hero2 />
+      < HeroComponent />
       <LanguagesSection />
       <Skills />
 

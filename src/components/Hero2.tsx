@@ -9,10 +9,12 @@ import cpp from "@/assets/cpp.png"
 import problemSolving from "@/assets/cpp1.png";
 import webDevelopment from "@/assets/cpp2.png";
 
+import { StaticImageData } from "next/image";
+
 type SpecializationItem = {
   title: string;
   description: string;
-  image: any;
+  image: StaticImageData;
 };
 
 type TechItem = {
@@ -127,9 +129,11 @@ const styles = `
 
 const AddStyles = () => <style>{styles}</style>;
 
-export default () => (
+const HeroComponent = () => (
   <>
     <AddStyles />
     <Hero2 />
   </>
 );
+
+export default HeroComponent;

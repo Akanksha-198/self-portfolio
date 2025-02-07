@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaGraduationCap, FaSchool, FaBook } from "react-icons/fa";
+import { FaGraduationCap, FaBook } from "react-icons/fa";
 
 export default function Education() {
   const educationDetails = [
@@ -39,7 +39,7 @@ export default function Education() {
           <FaGraduationCap className="mr-4 text-yellow-400" />
           My Education
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols- gap-10">
           {educationDetails.map((edu, index) => (
             <div
               key={index}

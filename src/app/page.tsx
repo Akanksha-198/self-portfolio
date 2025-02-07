@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Achievements from "@/components/Achivement";
+import ContactForm from "@/components/ContactForm";
 
 import Education from "@/components/Education";
 import Hero1 from "@/components/Hero1";
@@ -17,15 +18,14 @@ export default function Home() {
       < HeroComponent />
       <LanguagesSection />
       <Skills />
-
       <Portfolio />
       {/* <Experience/> */}
       <Education />
       <Achievements />
-      {/* <div className="grid lg:grid-cols-2 "> */}
+      <div className="grid lg:grid-cols-2 gap-12 mt-[5rem] ">
         <Resume />
-        {/* <Contact /> */}
-      {/* </div> */}
+         <ContactForm />
+      </div>
     </div>
   );
 }

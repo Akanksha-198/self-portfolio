@@ -65,7 +65,7 @@ export default function AboutMe() {
             </p>
           </div>
           <Link
-            href="#resume"
+            href="mailto:kakanksha198@gmail.com"
             className={`inline-block bg-blue-500 text-white px-8 py-3 rounded-lg font-medium mt-8 transition-all duration-500 ease-in-out hover:bg-blue-400 hover:shadow-lg transform hover:-translate-y-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           >
             Get in Touch

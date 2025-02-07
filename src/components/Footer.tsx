@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -19,7 +19,7 @@ export default function Footer() {
                 <Link href="#portfolio" className="hover:text-blue-400">Projects</Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-blue-400">Contact</Link>
+                <Link  href="mailto:kakanksha198@gmail.com" className="hover:text-blue-400">Contact</Link>
               </li>
             </ul>
           </div>
@@ -47,13 +47,7 @@ export default function Footer() {
               >
                 <FaGithub size={32} />
               </Link>
-              <Link
-                href="mailto:kakanksha198@gmail.com"
-                className="hover:text-blue-400"
-                aria-label="Email"
-              >
-                <FaEnvelope size={32} />
-              </Link>
+             
             </div>
           </div>
         </div>

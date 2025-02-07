@@ -17,6 +17,7 @@ export default function ContactForm() {
   });
 
   const [isClient, setIsClient] = useState(false);
+  const [status, setStatus] = useState("");
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -35,24 +36,24 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setStatus("Sending...");
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formspree.io/f/xjkgoopl", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        alert("Successfully added!");
+        setStatus("Message Sent Successfully! 🎉");
         setFormData({ name: "", email: "", message: "" });
       } else {
         throw new Error("Failed to send message");
       }
     } catch (error) {
       console.error("Error saving data:", error);
-      alert("An error occurred while saving your message.");
+      setStatus("An error occurred. Please try again.");
     }
   };
 
@@ -61,52 +62,29 @@ export default function ContactForm() {
   }
 
   return (
+    <>
     <form
       onSubmit={handleSubmit}
       className="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl w-full md:w-2/3 lg:w-[70%] transform transition-all duration-300"
       {...(isClient ? { 'data-aos': "zoom-in" } : {})}
     >
       <div className="mb-4">
-        <label
-          htmlFor="name"
-          className="block text-gray-300 font-bold mb-2 text-lg"
-        >
+        <label htmlFor="name" className="block text-gray-300 font-bold mb-2 text-lg">
           Your Name
         </label>
-        <div className="relative">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-inner"
-            required
-          />
-          <span className="absolute top-3 right-3 text-gray-400">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M16 14l-4-4m0 0l-4 4m4-4v12"
-              />
-            </svg>
-          </span>
-        </div>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
+          className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-inner"
+          required
+        />
       </div>
 
       <div className="mb-4">
-        <label
-          htmlFor="email"
-          className="block text-gray-300 font-bold mb-2 text-lg "
-        >
+        <label htmlFor="email" className="block text-gray-300 font-bold mb-2 text-lg">
           Your Email
         </label>
         <input
@@ -121,10 +99,7 @@ export default function ContactForm() {
       </div>
 
       <div className="mb-6">
-        <label
-          htmlFor="message"
-          className="block text-gray-300 font-bold mb-2 text-lg"
-        >
+        <label htmlFor="message" className="block text-gray-300 font-bold mb-2 text-lg">
           Your Message
         </label>
         <textarea
@@ -133,7 +108,8 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleInputChange}
           rows={4}
-          className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-inner"
+          className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-inner h-32 resize-none"
+
           required
         ></textarea>
       </div>
@@ -144,22 +120,13 @@ export default function ContactForm() {
           className="bg-gradient-to-r from-yellow-500 to-yellow-400 text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-lg flex items-center"
         >
           <span>Send Message</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 ml-2"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M10 14l2-2m0 0l2 2m-2-2v8m6 4H6a2 2 0 01-2-2V6a2 2 0 012-2h7m8 10v4m0 0l-4-4m4 4L14 14"
-            />
-          </svg>
         </button>
       </div>
+
+      {status && (
+        <p className="text-center mt-4 text-white">{status}</p>
+      )}
     </form>
+    </>
   );
 }

@@ -44,7 +44,7 @@ export default function AboutMe() {
           </h2>
           <div className="space-y-6">
             <p className={`text-lg text-gray-300 leading-relaxed transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              Hi, I&#39;m<span className="text-blue-400 font-semibold">Akanksha Kumari</span>, a passionate front-end developer with a knack for creating intuitive and visually appealing web interfaces. My expertise spans:
+              Hi, I&#39;m <span className="text-blue-400 font-semibold"> Akanksha Kumari</span>, a passionate front-end developer with a knack for creating intuitive and visually appealing web interfaces. My expertise spans:
             </p>
             <ul className={`list-disc list-inside text-gray-300 space-y-2 transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <li>HTML5, CSS3, and JavaScript (ES6+)</li>

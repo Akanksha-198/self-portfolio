@@ -9,7 +9,7 @@ export default function Education() {
     {
       degree: "Bachelor of Technology in Computer Science",
       institution: "Institute of Engineering and Technology, Lucknow",
-      duration: "2021 - 2025",
+      duration: "2022 - 2026",
       description:
         "Focused on core computer science concepts including algorithms, data structures, and web development. Achieved a strong academic record with a SGPA of 8.55.",
       icon: <FaGraduationCap className="text-5xl text-cyan-400" />,

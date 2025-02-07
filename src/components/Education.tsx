@@ -22,14 +22,14 @@ export default function Education() {
         "Studied core subjects including Mathematics, Physics, and Chemistry, achieving excellent grades.",
       icon: <FaBook className="text-5xl text-cyan-400" />,
     },
-    {
-      degree: "Secondary Education (10th Grade)",
-      institution: "DAV Public School",
-      duration: "2017 - 2019",
-      description:
-        "Completed foundational studies with a focus on Science and Mathematics, earning distinction grades.",
-      icon: <FaSchool className="text-5xl text-cyan-400" />,
-    },
+    // {
+    //   degree: "Secondary Education (10th Grade)",
+    //   institution: "DAV Public School",
+    //   duration: "2017 - 2019",
+    //   description:
+    //     "Completed foundational studies with a focus on Science and Mathematics, earning distinction grades.",
+    //   icon: <FaSchool className="text-5xl text-cyan-400" />,
+    // },
   ];
 
   useEffect(() => {

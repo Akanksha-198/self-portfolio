@@ -46,7 +46,7 @@ export default function Hero1() {
       </div>
       
 
-      <div className="relative z-10 text-center md:text-left md:w-1/2 px-6">
+      <div className="relative z-10 text-center md:text-left md:w-1/2 px-6 ">
       
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           {firstPart}

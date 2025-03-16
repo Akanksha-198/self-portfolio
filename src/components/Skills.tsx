@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaCode, FaLaptopCode, FaServer, FaTools } from "react-icons/fa";
-import { SiTailwindcss, SiBootstrap, SiExpress,  SiFigma } from "react-icons/si";
+import { SiTailwindcss, SiBootstrap, SiExpress,  SiFigma, SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
 export default function Skills() {
@@ -29,7 +29,7 @@ export default function Skills() {
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "Express.js", icon: <SiExpress /> },
         { name: "MySQL", icon: <GrMysql /> },
-        // { name: "MongoDB", icon: <SiMongodb /> },
+         { name: "MongoDB", icon: <SiMongodb /> },
       ],
     },
     {

@@ -68,7 +68,7 @@ export default function Hero1() {
             View Projects
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1NSQccZZFOeuYqDwAJsC7HyMjmLE9xLmQ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1DVl7gD7TYbDE4Ca_RmAueMqop2SFAAdH/view?usp=drive_link"
             className="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-blue-400 hover:scale-105 transition-transform"
           >
             View Resume

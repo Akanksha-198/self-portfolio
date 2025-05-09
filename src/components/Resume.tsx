@@ -38,7 +38,7 @@ export default function Resume() {
             Passionate developer with expertise in modern web technologies and a strong foundation in computer science.
           </p>
           <Link
-            href="https://drive.google.com/file/d/1NSQccZZFOeuYqDwAJsC7HyMjmLE9xLmQ/view?usp=sharing"  
+            href="https://drive.google.com/file/d/1DVl7gD7TYbDE4Ca_RmAueMqop2SFAAdH/view?usp=drive_link"  
             download="Akanksha_Kumari_Resume.pdf"
             className="inline-flex items-center text-blue-400 hover:text-cyan-300 transition duration-300"
             data-aos="fade-up"

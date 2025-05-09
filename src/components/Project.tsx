@@ -4,11 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ztake from "@/assets/ztake.png"
 import Image from "next/image";
-import myntra from "@/assets/myntra.png"
 import lumeweb from "@/assets/lumeweb.png"
 import foodie from "@/assets/foodie.png"
 import currency from "@/assets/currency.png"
-import social from "@/assets/social.png"
 import climate from "@/assets/climate.png"
 import news from "@/assets/news.png"
 import Link from "next/link";

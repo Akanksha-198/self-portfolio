@@ -63,7 +63,8 @@ export default function ContactForm() {
 
   return (
     <>
-    <form
+    <form 
+      id="contactme"
       onSubmit={handleSubmit}
       className="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl w-full md:w-2/3 lg:w-[70%] transform transition-all duration-300"
       {...(isClient ? { 'data-aos': "zoom-in" } : {})}

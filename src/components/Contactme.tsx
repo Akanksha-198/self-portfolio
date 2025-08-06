@@ -131,6 +131,7 @@
 "use client";
 import { useEffect } from "react";
 import AOS from "aos";
+import Link from "next/link";
 import "aos/dist/aos.css";
 
 export default function Contact() {
@@ -156,7 +157,8 @@ export default function Contact() {
             data-aos="zoom-in"
           >
             <p className="text-center text-white text-lg">
-              My email: <a href="mailto:akanksha198@gmail.com" className="text-yellow-400 hover:underline">akanksha198@gmail.com</a>
+              My email: <Link href="mailto:akanksha198@gmail.com"   target="_blank"
+  rel="noopener noreferrer" className="text-yellow-400 hover:underline">akanksha198@gmail.com</Link>
             </p>
           </div>
         </div>

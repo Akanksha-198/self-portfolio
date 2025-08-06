@@ -42,7 +42,7 @@ export default function AboutMe() {
           <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-8 transition-colors duration-300 ease-in-out hover:text-yellow-300">
             About Me
           </h2>
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <p className={`text-lg text-gray-300 leading-relaxed transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               Hi, I&#39;m <span className="text-blue-400 font-semibold"> Akanksha Kumari</span>, a passionate front-end developer with a knack for creating intuitive and visually appealing web interfaces. My expertise spans:
             </p>
@@ -63,9 +63,32 @@ export default function AboutMe() {
             <p className={`text-lg text-gray-300 leading-relaxed transition-all duration-700 delay-1300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               My goal is to become a versatile full-stack developer, capable of crafting end-to-end solutions that not only meet but exceed user expectations.
             </p>
-          </div>
+          </div> */}
+          <div className="space-y-6">
+  <p className={`text-lg text-gray-300 leading-relaxed transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    Hi, I&#39;m <span className="text-blue-400 font-semibold"> Akanksha Kumari</span>, a passionate full-stack developer with experience in building responsive and modern web apps. My expertise spans:
+  </p>
+  <ul className={`list-disc list-inside text-gray-300 space-y-2 transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <li>React, Next.js, and Tailwind CSS</li>
+    <li>Full-stack apps with MongoDB, PostgreSQL, and Prisma</li>
+    <li>API integration and Git/GitHub</li>
+    <li>Strong grasp on Data Structures & Algorithms</li>
+  </ul>
+  <p className={`text-lg text-gray-300 leading-relaxed transition-all duration-700 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    I&#39;ve built ML-based apps and high-performance full-stack systems. Notable projects include:
+  </p>
+  <ul className={`list-disc list-inside text-gray-300 space-y-2 transition-all duration-700 delay-1100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <li>Movie Recommendation System using Scikit-learn</li>
+    <li>Foodie: A full-stack food delivery app with Docker</li>
+    <li>LumeWeb: A modern agency site with auth and blog</li>
+  </ul>
+  <p className={`text-lg text-gray-300 leading-relaxed transition-all duration-700 delay-1300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    I aim to build impactful software that solves real-world problems with clean design and efficient code.
+  </p>
+</div>
+
           <Link
-            href="mailto:kakanksha198@gmail.com"
+            href="#contactme"
             className={`inline-block bg-blue-500 text-white px-8 py-3 rounded-lg font-medium mt-8 transition-all duration-500 ease-in-out hover:bg-blue-400 hover:shadow-lg transform hover:-translate-y-1 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           >
             Get in Touch

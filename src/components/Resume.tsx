@@ -38,10 +38,12 @@ export default function Resume() {
             Passionate developer with expertise in modern web technologies and a strong foundation in computer science.
           </p>
           <Link
-            href="https://drive.google.com/file/d/1oW-4LpJk8djW1DuMgATse3V6yyhvkAWh/view?usp=sharing"  
+            href="https://drive.google.com/file/d/1GE4IX7lCEi-htGf2vq8Sf6xmBTNdGkf5/view?usp=sharing"  
             download="Akanksha_Kumari_Resume.pdf"
             className="inline-flex items-center text-blue-400 hover:text-cyan-300 transition duration-300"
             data-aos="fade-up"
+             target="_blank"
+  rel="noopener noreferrer"
           >
             <FaDownload className="mr-2" />
             <span className="border-b border-blue-400 hover:border-cyan-300">

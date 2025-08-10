@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer className="bg-gray-900 py-10 mt-16 ">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 bg-gray-900">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Quick Links */}
           <div className="text-center md:text-left mb-8 md:mb-0">

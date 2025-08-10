@@ -34,7 +34,7 @@ export default function Achievements() {
 
   return (
     <div id="achievements" className="py-16 px-6 md:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto" >
         <h2
           className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-cyan-500 mb-8 flex items-center justify-center"
           data-aos="fade-up"

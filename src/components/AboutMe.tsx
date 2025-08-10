@@ -28,7 +28,7 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div id="about" className="py-24 px-6 md:px-12 lg:px-20 bg-gray-900 pb-[8rem]">
+    <div id="about" className="py-24 px-6 md:px-12 lg:px-20 pb-[8rem]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className={`flex justify-center transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'}`}>
           <Image

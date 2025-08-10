@@ -28,7 +28,7 @@ const experience: Item[] = [
 
 const Hero3: React.FC = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex justify-center items-center p-8">
+    <div className=" min-h-screen flex justify-center items-center p-8 bg-gray-900">
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
        
 

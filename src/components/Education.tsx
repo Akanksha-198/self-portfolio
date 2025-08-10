@@ -30,7 +30,7 @@ export default function Education() {
   }, []);
 
   return (
-    <div id="education" className="py-20 px-6 md:px-12 lg:px-20">
+    <div id="education" className="py-20 px-6 md:px-12 lg:px-20 ">
       <div className="max-w-7xl mx-auto">
         <h2
           className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-500 text-center mb-16 flex items-center justify-center"

@@ -69,7 +69,7 @@ export default function Portfolio() {
   const displayedProjects = isSmallScreen ? projects.slice(0, 3) : projects;
 
   return (
-    <div id="portfolio" className="py-20 px-6 md:px-12 lg:px-20">
+    <div id="portfolio" className="py-20 px-6 md:px-12 lg:px-20 ">
       <div className="max-w-7xl mx-auto">
         <h2
           className="text-4xl md:text-5xl font-bold text-yellow-400 text-center mb-16"

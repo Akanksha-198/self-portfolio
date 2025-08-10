@@ -55,7 +55,7 @@ const specializations: SpecializationItem[] = [
 
 const Hero2: React.FC = () => {
   return (
-    <div className="text-white py-20 px-4 ">
+    <div className="text-white py-20 px-4  ">
       <div className="max-w-6xl mx-auto ">
         <h2 className="text-5xl font-extrabold text-yellow-300 mb-16 text-center ">
           Technologies

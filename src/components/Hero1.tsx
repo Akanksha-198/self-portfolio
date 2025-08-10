@@ -32,11 +32,9 @@ export default function Hero1() {
   return (
     <div
       id="home"
-      className="relative flex flex-col md:flex-row items-center justify-center h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white"
+      className="relative flex flex-col md:flex-row items-center justify-center h-screen  text-white"
     >
-      <div
-        className="absolute inset-0 bg-gradient-to-r from-blue-800 to-purple-900 opacity-10 animate-[pulse_8s_ease-in-out_infinite]"
-      ></div>
+
       <div className="absolute top-4 left-4 md:top-8 md:left-8">
         <Image 
           src={logo} 

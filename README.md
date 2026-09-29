@@ -1,6 +1,6 @@
 # self-portfolio
 
-**Live site:**https://akankshakumariportfolio.netlify.app/
+**Live site: **https://akankshakumariportfolio.netlify.app/
 
 **Live site Premium Repo:** https://akanksha-dev-silk.vercel.app/
 
